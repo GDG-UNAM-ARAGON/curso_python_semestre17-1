@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructora</title>
+  {% load static from staticfiles %} <!-- carga la carpeta static -->
+ 
+
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}"><!--link para conectar static con template-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{% static "css/materialize.min.css" %}"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="{% static "css/materialize.css" %}"  media="screen,projection"/>
+
+</head>
+
+
+<body>
+
+	<div id="header">
+		 <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Link</a></li>
+        <li><a class="waves-effect waves-light btn">Facebook</a></li>
+        <li><a class="waves-effect waves-light btn-large"><i class="youtube">youtube</i>
+</a></li>
+      </ul>
+    </div>
+  </nav>
+	</div>
+
+
+
+   <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="{% static "media/img/fondo.jpg" %}"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static "media/img/im1.jpg" %}"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="{% static "media/img/im2.jpg" %}"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+	
+
+
+
+<div class="container"> 
+	<div id="main">
+		
+		<h1>Servicios que ofrecemos</h1>
+		
+    <div class="row"> 
+			<div class="layout"><a href="Mantenimiento.html"><img src="{% static "media/img/im2.jpg" %}" width="250" height="250" ></a><h4> Mantenimiento </h4></div>
+
+			<div class="layout"><a href="Diseñoyarquitectura.html"><img src="{% static "media/img/fondo.jpg" %}" width="250" height="250" ></a><h4> Diseño y arquitectura </h4></div>
+
+      <div class="layout"  ><a href="construccion,remodelacionyampliacion.html"><img src="{% static "media/img/const.jpg" %}"  width="250" height="250" align="center"></a><h4> Construccion, remodelacion y ampliacion</h4> </div> 
+
+	 </div>
+  </div>
+</div>
+
+
+
+ 
+
+
+
+	<div id="footer">
+		<ul>
+			
+			<li><a href="Contacto.html">Contactanos</a></li>
+			<li><a href="ComoLlegar.html">Como llegar</a></li>
+			
+		</ul>
+	</div>
+
+	
+	<script type="text/javascript" src="{% static "js/init.css" %}"></script>
+	
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="{% static "js/materialize.min.js" %}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+      <script type="text/javascript">$(document).ready(function(){
+      $('.carousel').carousel();
+    });
+
+     //Next slide
+$('.carousel').carousel('next');
+$('.carousel').carousel('next', [3]); // Move next n times.
+// Previous slide
+$('.carousel').carousel('prev');
+$('.carousel').carousel('prev', [4]); // Move prev n times.
+$(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+// Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+</script>
+</body>
+</html>

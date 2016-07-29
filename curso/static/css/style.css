@@ -1,0 +1,109 @@
+body{
+	background-color: #57FFEC;
+}
+#header{
+	background-color: ;
+	text-align: ;
+	text-decoration-color: black;
+	text-shadow: black;
+
+}
+ #header ul{
+ 	background-color: #E8C773;
+	list-style: none;
+	text-align: right;
+
+}
+#header ul li{
+	display: inline;
+	text-align: right;
+}
+#header ul a{
+	padding-right: 20px;
+	
+	font-family:arial, sans-serif;
+	font-size: 25px;
+	text-align: right;
+}
+#header ul img{
+	padding-right: 20px;
+}
+#header p{
+	align: top;
+}
+---------------------------------------
+
+ #main{
+ 	text-align: center;
+	background-color: purple;
+}
+#main h1{
+	text-align: center;
+}
+#main h2{
+	text-align: center;
+}
+#main h3{
+	text-align: center;
+}
+#main h4{
+	padding-left: 80px;
+}
+#main p{
+	text-align: bottom;
+	align-items: left;
+}
+-------------------------------
+
+ #footer{
+	background-color:;
+}
+ #footer ul{
+	list-style: none;
+}
+#footer ul li{
+	display: inline;
+}
+#footer ul a{
+	padding-right: 20px;
+}
+-----------------------------------
+.boton{
+border-color: red;
+}
+.logo{
+	height: 200px;
+	width:  350px;
+	padding-right: 100px;
+	padding-left: 100px;
+	background-color: transparent;
+	align-content: middle;
+
+}
+.img{
+	height: 200px;
+	width: 350px;
+	padding-left: 100px;
+	padding-right: 50px
+	transition: 0.3s;
+}
+.img:hover{
+	transform: scale(1.4);
+}
+.img2{
+	height: 250px;
+	width: 250px;
+	padding-left: 150px;
+	padding-right: 450px;
+}
+.layout{
+	table-layout: 3;
+	column-count: 3;
+	display: inline-block;
+	
+}
+#id{
+	background-color: red;
+	padding: 10px;
+
+}
